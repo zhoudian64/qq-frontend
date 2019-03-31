@@ -75,7 +75,6 @@
                 };
             }
             const response = await this.axios.post("http://localhost:8000/rsa_encrypt_numbers", data);
-            console.log(response);
             this.hashedData = response.data;
         }
     };
