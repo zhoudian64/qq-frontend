@@ -1,7 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import RSA from './views/RSA.vue';
-
+import DES from './views/DES.vue';
+import MD5 from './views/MD5.vue';
+import AES from './views/AES.vue';
+import encrypt from './views/Encrypt.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -11,7 +14,7 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            component: RSA,
+            redirect: '/encrypt/rsa'
         },
         {
             path: '/about',
@@ -19,9 +22,32 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
         },
         {
-            path: '/rsa',
-            name: 'rsa',
-            component: RSA,
-        },
+            path: '/encrypt',
+            name: 'encrypt',
+            component: encrypt,
+            children:[
+                {
+                    path: 'rsa',
+                    name: 'rsa',
+                    component: RSA,
+                },
+                {
+                    path: 'des',
+                    name: 'des',
+                    component: DES,
+                },
+                {
+                    path: 'md5',
+                    name: 'md5',
+                    component: MD5,
+                },
+                {
+                    path: 'aes',
+                    name: 'aes',
+                    component: AES,
+                },
+            ]
+        }
+
     ],
 });

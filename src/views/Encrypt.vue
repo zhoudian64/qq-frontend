@@ -2,13 +2,16 @@
     <v-container>
         <v-card grid-list-md>
             <v-layout row wrap pa-3 ma-3>
-                <v-btn to="/encrypt/rsa">
+                <v-btn to="rsa">
                     RSA
                 </v-btn>
-                <v-btn to="/encrypt/aes">
-                    AES&amp;DES
+                <v-btn to="des">
+                    DES
                 </v-btn>
-                <v-btn to="/encrypt/md5">
+                <v-btn to="aes">
+                    AES
+                </v-btn>
+                <v-btn to="md5">
                     MD5&amp;SHA-series
                 </v-btn>
             </v-layout>

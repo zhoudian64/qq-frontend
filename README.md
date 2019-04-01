@@ -1,5 +1,10 @@
 # zd-frontend
 
+## docker
+```shell
+docker run -p 3000:3000 zhoudian64/qq-frontend
+```
+
 ## Project setup
 ```
 yarn install

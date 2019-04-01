@@ -56,11 +56,11 @@
         data: () => ({
             drawer: null,
             items: [
-                {icon: "looks_one", text: "rsa", to: "rsa"},
-                {icon: "looks_two", text: "zd是xie"},
-                {icon: "looks_3", text: "zd是xie1"},
-                {icon: "looks_4", text: "zd是xie2"},
-                {icon: "looks_5", text: "zd是xie3"}
+                {icon: "looks_one", text: "Encrypt", to: "/"},
+                {icon: "looks_two", text: "To be continued.", to:"/"},
+                {icon: "looks_3", text: "To be continued.", to:"/"},
+                {icon: "looks_4", text: "To be continued.", to:"/"},
+                {icon: "looks_5", text: "To be continued.", to:"/"}
             ],
             items2: [
                 {name: "周典", id: "17120186"},
