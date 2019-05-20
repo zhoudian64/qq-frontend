@@ -58,9 +58,9 @@
             items: [
                 {icon: "looks_one", text: "Encrypt", to: "/"},
                 {icon: "looks_two", text: "To be continued.", to:"/"},
-                {icon: "looks_3", text: "To be continued.", to:"/"},
-                {icon: "looks_4", text: "To be continued.", to:"/"},
-                {icon: "looks_5", text: "To be continued.", to:"/"}
+                {icon: "looks_3", text: "Homomorphic", to:"/homo"},
+                {icon: "looks_4", text: "SQL injection", to:"/sql"},
+                {icon: "looks_5", text: "To be continued...", to:"/"}
             ],
             items2: [
                 {name: "周典", id: "17120186"},

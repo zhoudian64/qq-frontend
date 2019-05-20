@@ -5,6 +5,9 @@ import DES from './views/DES.vue';
 import MD5 from './views/MD5.vue';
 import AES from './views/AES.vue';
 import encrypt from './views/Encrypt.vue';
+import homo from './views/Homo.vue';
+import sql from './views/sql.vue';
+
 Vue.use(Router);
 
 export default new Router({
@@ -25,7 +28,7 @@ export default new Router({
             path: '/encrypt',
             name: 'encrypt',
             component: encrypt,
-            children:[
+            children: [
                 {
                     path: 'rsa',
                     name: 'rsa',
@@ -47,6 +50,16 @@ export default new Router({
                     component: AES,
                 },
             ]
+        },
+        {
+            path: '/homo',
+            name: 'homo',
+            component: homo,
+        },
+        {
+            path: '/sql',
+            name: 'sql',
+            component: sql,
         }
 
     ],
